@@ -1,0 +1,15 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#border-left{
+    float:left ;
+    height: 100vw;
+    background-color: black;
+}
+
+#border-right{
+    float:right;
+    height: 100vw;
+    background-color: black;
+}
