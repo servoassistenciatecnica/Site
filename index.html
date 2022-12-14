@@ -1,28 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/stylebasic.css">
     <link rel="stylesheet" href="src/styleall.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"
+    />
+    <link rel="stylesheet" href="src/style/stylecarousel.css" />
     <title>Document</title>
   </head>
   <body>
 
-    <div id="border-left"></div>
+    <div class="container">
+      <div id="backheader">
+      
+        <div id="logoheader"><img src="src/img/2.svg" alt="" srcset="" id="imgheader"></div>
+      
+      
+      
+      </div>
+        <header>
+              <div id="linksheader">
+                <ul>
+                  <li><a href="#" onclick="openpag('loja')">LOJA</a></li>
+                  <li><a href="#" onclick="openpag('serviços')">SERVIÇOS</a></li>
+                  <li><a href="#" onclick="openpag('treinamento')">TREINAMENTO</a></li>
+                  <li><a href="#" onclick="openpag('contato')">CONTATOS</a></li>
+                </ul>
+              </div>
+        </header>
+      <hr>
+        <div id="my-keen-slider" class="keen-slider">
+          <div class="keen-slider__slide number-slide1">1</div>
+          <div class="keen-slider__slide number-slide2">2</div>
+          <div class="keen-slider__slide number-slide3">3</div>
+          <div class="keen-slider__slide number-slide4">4</div>
+          <div class="keen-slider__slide number-slide5">5</div>
+          <div class="keen-slider__slide number-slide6">6</div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
+        <script src="src/script/scriptcarousel.js"></script>
+      
+<hr> 
 
-      <header>
-          <ul id="header-link">
-              
-            <li>PAGINA INICIAL</li>
-            <li>SERVIÇOS</li>
-            <li>CONTATOS</li>
-  
-          </ul>
-      </header>
+        <div class="displayed">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laudantium nesciunt, fugit accusamus impedit sit alias optio perferendis veniam magni possimus voluptates repellendus quod officiis ab voluptas! Inventore, maiores.
+        </div>
 
-    <div id="border-right"></div>
-
+        <footer>
+          <div id="textinformation">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est necessitatibus perspiciatis eius, pariatur ullam odit, nam laudantium voluptas dignissimos doloremque, ratione reprehenderit delectus deleniti mollitia molestias ab officiis minus nobis!</p>
+          </div>
+        </footer>
+        <script src="src/script/fastcharging.js"></script>
+    </div>
   </body>
 </html>

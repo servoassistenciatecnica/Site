@@ -1,8 +1,70 @@
-header {
-  width: 100%;
+:root {
+  --preto:#172026;
 }
-#header-link > li {
-  display: inline-block;
-  margin: 10px;
-  text-align: center;
+
+header {
+  width:100vw;
+  height: 60px;
+  background-color: white;
+  margin: auto;
+	display: flex;
+}
+
+#linksheader{
+  float: right;
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+
+}
+
+#linksheader ul {
+  list-style: none;
+  
+}
+  
+#linksheader li {
+  display: inline;
+  padding: 10px;
+  
+  
+  
+}
+
+#linksheader li:hover{
+  cursor: pointer;
+  margin: 2vw;
+  border-bottom: 2px lightgray solid;
+  
+  
+}
+
+#backheader{
+  width: 100vw;
+  height: 120px;
+  background-color: white;
+  border-bottom: 1px solid lightgray ;
+  
+  
+}
+
+#imgheader{
+  width: 120px;
+  height: 120px;
+  display: block;
+  margin: auto;
+}
+
+footer{
+  width: 100vw;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--preto);
+  color: white;
+}
+
+#textinformation{
+  width: 40vw;
+  text-align: left;
 }
