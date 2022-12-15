@@ -11,6 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css"
     />
     <link rel="stylesheet" href="src/style/stylecarousel.css" />
+    <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap'); </style>
     <title>Document</title>
   </head>
   <body>
@@ -26,10 +27,12 @@
         <header>
               <div id="linksheader">
                 <ul>
-                  <li><a href="#" onclick="openpag('loja')">LOJA</a></li>
-                  <li><a href="#" onclick="openpag('serviços')">SERVIÇOS</a></li>
-                  <li><a href="#" onclick="openpag('treinamento')">TREINAMENTO</a></li>
-                  <li><a href="#" onclick="openpag('contato')">CONTATOS</a></li>
+                  <li><a href="#" onclick="openhome()">HOME</a></li>
+                  <li><a href="#" onclick="openloja()">LOJA</a></li>
+                  <li><a href="#" onclick="openserviços()">SERVIÇOS</a></li>
+                  <li><a href="#" onclick="opentreinamentos()">TREINAMENTO</a></li>
+                  <li><a href="#" onclick="opencontatos()">CONTATOS</a></li>
+                  
                 </ul>
               </div>
         </header>
@@ -47,9 +50,18 @@
       
 <hr> 
 
-        <div class="displayed">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, fuga laudantium nesciunt, fugit accusamus impedit sit alias optio perferendis veniam magni possimus voluptates repellendus quod officiis ab voluptas! Inventore, maiores.
-        </div>
+        
+
+        <article id="displayheader">
+          <div id="home" class="chargingbord">home</div>
+          <div id="loja" class="chargingbord">
+            <div id="partmagalu"></div>
+            <div id="partaz"></div>
+          </div>
+          <div id="serviços" class="chargingbord">serviços</div>
+          <div id="treinamentos" class="chargingbord">treinamentos</div>
+          <div id="contatos" class="chargingbord">contatos</div>
+        </article>
 
         <footer>
           <div id="textinformation">
@@ -57,6 +69,9 @@
           </div>
         </footer>
         <script src="src/script/fastcharging.js"></script>
+        
+       
+        
     </div>
   </body>
 </html>
