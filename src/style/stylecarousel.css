@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    font-family: "Inter", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -14,7 +13,7 @@ body {
     color: #fff;
     font-weight: 500;
     height: 300px;
-    max-height: 100vh;
+    width: 100vw;
   }
   
   .number-slide1 {

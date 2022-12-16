@@ -4,6 +4,19 @@
   --preto:#172026;
 }
 
+h3,p{
+  font-family: 'Open Sans','Courier New', Courier, monospace;
+}
+
+h3{
+  color: #2D5EF5;
+}
+
+a{
+  text-decoration: none;
+  color: #2F2F39;
+}
+
 header {
   width:100vw;
   height: 60px;
@@ -30,8 +43,7 @@ header {
 #linksheader li {
   display: inline;
   padding: 10px;
-  
-  
+  color: #2F2F39;
   
 }
 
@@ -39,6 +51,7 @@ header {
   cursor: pointer;
   margin: 2vw;
   border-bottom: 2px lightgray solid;
+  
   
   
 }
@@ -57,13 +70,17 @@ header {
   height: 120px;
   display: block;
   margin: auto;
+  
+}
+
+#logoheader{
+  background-color: #2F2F39;
 }
 
 footer{
   width: 100vw;
   font-family: 'Courier New', Courier, monospace;
-  background-color: var(--preto);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 #textinformation{
@@ -79,17 +96,15 @@ footer{
 #loja{
   width: 100vw;
   height: 300px;
-  border: 1px solid black;
-  display: flex;
   align-items: center;
   justify-content:center ;
-  
+
 }
 
 #partmagalu{
   width: 15vw;
   height:50px;
-  border: 1px solid black;
+  
   border-radius: 14px;
   background-image: url(img/partmagalu.webp);
   background-position: center center;
@@ -105,7 +120,6 @@ footer{
 #partaz{
   width: 15vw;
   height: 50px;
-  border: 1px solid black;
   border-radius: 14px;
   background-image: url(img/partaz.webp);
   background-position: center center;
@@ -116,4 +130,102 @@ footer{
 #partaz:hover{
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+#conteinerinfosite {
+  width: 90vw;
+  margin: auto;
+}
+
+#inforsite{
+  float: left;
+  width: 45vw;
+  height: 500px;
+  text-align: center;
+  margin-top:5vh;
+  
+}
+
+#imginfosite {
+  background-image: url(img/Design-sem-nome-_2_.webp) ;
+  width: 40vw;
+  float: right;
+  height:500px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top:5vh;
+}
+
+#infojob{
+  width: 100vw;
+  height: 500px ;
+} 
+
+#infoloja{
+  width: 90vw;
+  margin: auto;
+}
+
+#imgloja{
+  background-image: url(img/treinamenos.svg) ;
+  width: 40vw;
+  float: left;
+  height:400px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top:5vh;
+}
+
+#textloja{
+  float: right;
+  width: 45vw;
+  height: 400px;
+  text-align: center;
+  margin-top:5vh;
+}
+
+#imgserviço{
+  background-image: url(img/serviçosphotos.svg) ;
+  width: 40vw;
+  float: right;
+  height:400px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top:5vh;
+}
+
+#infoserviço{
+  width: 90vw;
+  margin: auto;
+}
+
+#textserviço{
+  float: left;
+  width: 45vw;
+  height: 400px;
+  text-align: center;
+  margin-top:5vh;
+}
+
+#infocontatos{
+  width: 90vw;
+  margin: auto;
+}
+
+#imgcontatos{
+  background-image: url(img/contatosphotos.svg) ;
+  width: 40vw;
+  float: left;
+  height:400px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top:5vh;
+}
+
+#textcontatos{
+  float: right;
+  width: 45vw;
+  height: 400px;
+  text-align: center;
+  margin-top:5vh;
 }
