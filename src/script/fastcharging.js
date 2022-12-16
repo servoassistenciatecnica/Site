@@ -23,7 +23,6 @@
 
     function openloja(){
         if (loja.style.display == "none") {
-            viloja.style.display = "flex"
             home.style.display = "none"
             serviços.style.display = "none"
             treinamentos.style.display = "none"
@@ -37,9 +36,9 @@
             treinamentos.style.display = "none"
             contatos.style.display = "none"
             loja.style.display = "none"
-            loja.style.width = "0vh"
-            viloja.style.width = "0vh"
-            viloja.style.display = "none"
+            loja.style.width = "0vw"
+            viloja.style.width = "0vw"
+            
             
         }
     }
