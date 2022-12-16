@@ -1,7 +1,7 @@
 
 
 :root {
-  --preto:#172026;
+  --preto:#2F2F39;
 }
 
 h3,p{
@@ -104,17 +104,36 @@ footer{
 #partmagalu{
   width: 15vw;
   height:50px;
-  
   border-radius: 14px;
   background-image: url(img/partmagalu.webp);
   background-position: center center;
   background-size: cover;
   margin-right: 1vw;
+  
 }
 
 #partmagalu:hover{
   margin-bottom: 10px;
   cursor: pointer;
+  transform: scale(1.1);
+  border: 1px lightgrey solid;
+}
+
+#buttosviewloja{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0vw;
+  height: 120px;
+
+}
+
+#viewloja{
+  width: 0vw;
+  height: 120px;
+  border-top: 1px lightgray solid;
+  background-color: var(--preto);
+  display: none;
 }
 
 #partaz{
@@ -125,11 +144,14 @@ footer{
   background-position: center center;
   background-size: cover;
   margin-left: 1vw;
+  
 }
 
 #partaz:hover{
   margin-bottom: 10px;
   cursor: pointer;
+  transform: scale(1.1);
+  border: 1px lightgrey solid;
 }
 
 #conteinerinfosite {
@@ -154,6 +176,7 @@ footer{
   background-size: cover;
   background-repeat: no-repeat;
   margin-top:5vh;
+  border-radius: 12px;
 }
 
 #infojob{
@@ -167,13 +190,14 @@ footer{
 }
 
 #imgloja{
-  background-image: url(img/treinamenos.svg) ;
+  background-image: url(img/newloja.svg) ;
   width: 40vw;
   float: left;
   height:400px ;
   background-size: cover;
   background-repeat: no-repeat;
   margin-top:5vh;
+  border-radius: 12px;
 }
 
 #textloja{
@@ -192,6 +216,7 @@ footer{
   background-size: cover;
   background-repeat: no-repeat;
   margin-top:5vh;
+  border-radius: 12px;
 }
 
 #infoserviço{
@@ -220,6 +245,7 @@ footer{
   background-size: cover;
   background-repeat: no-repeat;
   margin-top:5vh;
+  border-radius: 12px;
 }
 
 #textcontatos{
@@ -229,3 +255,28 @@ footer{
   text-align: center;
   margin-top:5vh;
 }
+
+#infotrein{
+  width: 90vw;
+  margin: auto;
+}
+
+#treinimg{
+  background-image: url(img/treinamenos.svg) ;
+  width: 40vw;
+  float: right;
+  height:400px ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top:10vh;
+  border-radius: 12px;
+}
+
+#texttrein{
+  float: left;
+  width: 45vw;
+  height: 400px;
+  text-align: center;
+  margin-top:5vh;
+}
+
