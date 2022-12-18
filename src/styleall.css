@@ -19,51 +19,91 @@ a{
 
 header {
   width:100vw;
-  height: 60px;
+  height: 10vh;
   background-color: white;
   margin: auto;
 	display: flex;
 }
 
-#linksheader{
-  float: right;
-  width: 100vw;
-  height: 60px;
+.nav-link {
+  z-index: 1;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content:center ;
+  justify-content: center;
+  height: 10vh;
+}
+
+.nav-link ul {
+  padding: 1vw;
+}
+
+.nav-link li{
 
 }
 
-#linksheader ul {
-  list-style: none;
-  
-}
-  
-#linksheader li {
+.nav-link ul li{
   display: inline;
-  padding: 10px;
-  color: #2F2F39;
+  position: relative;
   
 }
 
-#linksheader li:hover{
-  cursor: pointer;
-  margin: 2vw;
-  border-bottom: 2px lightgray solid;
-  
-  
-  
-}
-
-#backheader{
-  width: 100vw;
-  height: 120px;
+.nav-link ul ul{
+  display: none;
+  position: absolute;
+  left: 0%;
   background-color: white;
-  border-bottom: 1px solid lightgray ;
+  float: left;
   
   
 }
+
+.nav-link ul li ul > li{
+  display: inline;
+}
+
+.nav-link ul li ul{
+  display: none;
+}
+
+.nav-link ul li:hover > ul {
+  display: block;
+  
+}
+
+.aniseta{
+  width: 10px;
+  height: 10px;
+  transform: rotate(270deg);
+}
+
+.aniheader:hover > .aniseta{
+  transform: rotate(90deg);
+} 
+
+.aniheader:hover{
+  cursor: pointer;
+  padding: 1vw;
+  border-bottom: 1px lightgray solid;
+
+}
+
+.nav-link ul .aniheader:hover .dropdown{
+  display: flex;
+}
+
+.nav-link ul .aniheader .dropdown {
+ display: none  ;
+ margin: 10px ;
+}
+
+.nav-link ul .aniheader .dropdown li {
+  margin: 1vw ;
+ }
+
+ .nav-link ul .aniheader .dropdown li :hover {
+  text-decoration: underline;
+ }
 
 #imgheader{
   width: 120px;
@@ -75,12 +115,6 @@ header {
 
 #logoheader{
   background-color: #2F2F39;
-}
-
-footer{
-  width: 100vw;
-  font-family: 'Courier New', Courier, monospace;
-  color: rgb(0, 0, 0);
 }
 
 #textinformation{
@@ -124,17 +158,16 @@ footer{
   justify-content: center;
   align-items: center;
   width: 0vw;
-  height: 120px;
+  height: 15vh;
   float: left;
 }
 
 #viewloja{
   width: 0vw;
-  height: 120px;
+  height: 15vh;
   border-top: 1px lightgray solid;
   background-color: var(--preto);
   float: left;
-  transition: all .5s linear;
   border-radius: 0px 12px 12px 0px;
 }
 
@@ -156,10 +189,60 @@ footer{
   border: 1px lightgrey solid;
 }
 
+#viewcontact{
+  width: 100vw;
+  height: 15vh;
+  background-color: #2FBA43;
+  
+}
+
+.contactwhats{
+  width: 17vw;
+  height: 5vh;
+  background-color: white;
+  border-radius: 12px;
+  margin: 1vw;
+  overflow: hidden;
+  display: flex;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.contactwhats > img{
+  float: left;
+  border-radius:50% ;
+  
+}
+
+.contactwhats:hover{
+  margin-bottom: 10px;
+  cursor: pointer;
+  transform: scale(1.1);
+  border: 1px lightgrey solid;
+}
+
+#contactname{
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-left: 1vw;
+}
+
+#buttonsviewcontact{
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #conteinerinfosite {
   width: 90vw;
   margin: auto;
 }
+
+
+
 
 #inforsite{
   float: left;
@@ -208,6 +291,7 @@ footer{
   height: 400px;
   text-align: center;
   margin-top:5vh;
+  
 }
 
 #imgserviço{
