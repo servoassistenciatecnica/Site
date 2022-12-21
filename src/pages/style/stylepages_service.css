@@ -1,0 +1,35 @@
+*{
+    padding:0%;
+    margin:0%;
+
+}
+body,html{
+    width: 100%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+:root{
+    --backazul:#0079E6;
+}
+
+.dashbordconteiner{
+    background: var(--backazul);
+    width: 5vw;
+    height: 100vh;
+}
+
+.dashlist{
+    display: flex;
+    flex-direction: column;
+}
+
+.listnameservice{
+    width: 100%;
+    height: 5vh;
+}
+
+.imglist{
+    width: 35px;
+    height: 35px;
+}
