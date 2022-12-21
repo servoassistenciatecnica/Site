@@ -1,28 +1,66 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
-  --preto:#2F2F39;
+  --preto: #2f2f39;
 }
 
-h3,p{
-  font-family: 'Open Sans','Courier New', Courier, monospace;
+@keyframes loadind {
+  to{
+    transform: rotate(360deg);
+  }
 }
 
-h3{
-  color: #2D5EF5;
+#box-load{
+  z-index: 2;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-a{
+#loadind{
+  width: 80px;
+  height: 80px;
+  background: url(img/loadindpageicon.svg) no-repeat;
+  background-size: contain;
+  animation: loadind 1.3s infinite cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#afterheader{
+  display: none;
+}
+
+#container{
+  display: block;
+}
+
+#beforeheader{
+  display: block;
+}
+
+h3,
+p {
+  font-family: "Open Sans", "Courier New", Courier, monospace;
+}
+
+h3 {
+  color: #2d5ef5;
+}
+
+a {
   text-decoration: none;
-  color: #2F2F39;
+  color:black;
 }
 
 header {
-  width:100vw;
+  width: 100vw;
   height: 10vh;
   background-color: white;
   margin: auto;
-	display: flex;
+  display: flex;
 }
 
 .nav-link {
@@ -32,128 +70,200 @@ header {
   align-items: center;
   justify-content: center;
   height: 10vh;
+
 }
 
 .nav-link ul {
   padding: 1vw;
 }
 
-.nav-link li{
-
-}
-
-.nav-link ul li{
+.nav-link ul li {
   display: inline;
   position: relative;
-  
 }
 
-.nav-link ul ul{
-  display: none;
+.nav-link ul ul {
   position: absolute;
   left: 0%;
-  background-color: white;
   float: left;
-  
-  
-}
-
-.nav-link ul li ul > li{
-  display: inline;
-}
-
-.nav-link ul li ul{
   display: none;
+  justify-content: space-between;
+  border-radius: 12px;
 }
 
-.nav-link ul li:hover > ul {
-  display: block;
-  
+.nav-link ul :hover ul {
+  display: flex;
 }
 
-.aniseta{
+.aniseta {
   width: 10px;
   height: 10px;
   transform: rotate(270deg);
 }
 
-.aniheader:hover > .aniseta{
+.aniheader:hover>.aniseta {
   transform: rotate(90deg);
-} 
+}
 
-.aniheader:hover{
+.anisetaserv {
+  width: 10px;
+  height: 10px;
+  transform: rotate(270deg);
+}
+
+.aniheader:hover>.anisetaserv {
+  transform: rotate(90deg);
+}
+
+.aniheader:hover {
   cursor: pointer;
   padding: 1vw;
   border-bottom: 1px lightgray solid;
+}
+
+.lojalogoheader {
+  display: flex;
+  width: 10vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  background: url(img/partmagalu.webp) no-repeat center center;
+  background-size: contain;
+  padding: 1vw;
 
 }
 
-.nav-link ul .aniheader:hover .dropdown{
+.lojalogoheaderaz {
+  display: flex;
+  width: 10vw;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  background: url(img/partaz.webp) no-repeat center center;
+  background-size: contain;
+  padding: 1vw;
+
+}
+
+.lojalogoheader:hover {
+  border-radius: 2px;
+  border-bottom: 1px solid white;
+
+  transform: scale(1.1);
+}
+
+.lojalogoheaderaz:hover {
+  border-radius: 2px;
+  border-bottom: 1px solid white;
+  transform: scale(1.1);
+}
+
+
+.dropdown-loja {
   display: flex;
 }
 
-.nav-link ul .aniheader .dropdown {
- display: none  ;
- margin: 10px ;
+.dropdownservice {
+  width: 40vw;
+  height: 40vh;
+  background-color: white;
+  display: flex;
 }
 
-.nav-link ul .aniheader .dropdown li {
-  margin: 1vw ;
- }
+.dropdownservice li {
+  display: flex;
+}
 
- .nav-link ul .aniheader .dropdown li :hover {
+.textinformationservice {
+  width: 40%;
+  height: 100%;
+  float: left;
+}
+
+.textinformationservice h4 :hover{
+ text-decoration: underline;
+}
+
+.dropboxconteinerservice {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+}
+
+.optionsinformationservice {
+  display:flex;
+  flex-direction:column ;
+  width: 40%;
+  height: 100%;
+  float: right;
+}
+
+.optionsinformationservice > a {
+  padding-top: 5%;
+}
+
+.optionsinformationservice > a:hover {
   text-decoration: underline;
- }
+}
 
-#imgheader{
+.anisetaservice{
+  width: 10px;
+  height: 10px;
+  transform: rotate(270deg);
+}
+
+.dropdown-serviço {
+  display: flex;
+}
+
+#imgheader {
   width: 120px;
   height: 120px;
   display: block;
   margin: auto;
-  
 }
 
-#logoheader{
-  background-color: #2F2F39;
+#logoheader {
+  background-color: #2f2f39;
 }
 
-#textinformation{
+#textinformation {
   width: 40vw;
   text-align: left;
 }
 
-.chargingbord{
-  
-  display:none;
+.chargingbord {
+  display: none;
 }
 
-#loja{
+#loja {
   width: 100vw;
   height: 300px;
   align-items: center;
-  justify-content:center ;
-
+  justify-content: center;
 }
 
-#partmagalu{
+#partmagalu {
   width: 15vw;
-  height:50px;
+  height: 50px;
   border-radius: 14px;
   background-image: url(img/partmagalu.webp);
   background-position: center center;
   background-size: cover;
   margin-right: 1vw;
-  
 }
 
-#partmagalu:hover{
+#partmagalu:hover {
   margin-bottom: 10px;
   cursor: pointer;
   transform: scale(1.1);
   border: 1px lightgrey solid;
 }
 
-#buttosviewloja{
+#buttosviewloja {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -162,7 +272,7 @@ header {
   float: left;
 }
 
-#viewloja{
+#viewloja {
   width: 0vw;
   height: 15vh;
   border-top: 1px lightgray solid;
@@ -171,7 +281,7 @@ header {
   border-radius: 0px 12px 12px 0px;
 }
 
-#partaz{
+#partaz {
   width: 15vw;
   height: 50px;
   border-radius: 14px;
@@ -179,24 +289,22 @@ header {
   background-position: center center;
   background-size: cover;
   margin-left: 1vw;
-  
 }
 
-#partaz:hover{
+#partaz:hover {
   margin-bottom: 10px;
   cursor: pointer;
   transform: scale(1.1);
   border: 1px lightgrey solid;
 }
 
-#viewcontact{
+#viewcontact {
   width: 100vw;
   height: 15vh;
-  background-color: #2FBA43;
-  
+  background-color: #2fba43;
 }
 
-.contactwhats{
+.contactwhats {
   width: 17vw;
   height: 5vh;
   background-color: white;
@@ -208,27 +316,26 @@ header {
   padding: 5px;
 }
 
-.contactwhats > img{
+.contactwhats>img {
   float: left;
-  border-radius:50% ;
-  
+  border-radius: 50%;
 }
 
-.contactwhats:hover{
+.contactwhats:hover {
   margin-bottom: 10px;
   cursor: pointer;
   transform: scale(1.1);
   border: 1px lightgrey solid;
 }
 
-#contactname{
+#contactname {
   float: right;
   display: flex;
   align-items: center;
   margin-left: 1vw;
 }
 
-#buttonsviewcontact{
+#buttonsviewcontact {
   width: 100vw;
   height: 15vh;
   display: flex;
@@ -241,128 +348,122 @@ header {
   margin: auto;
 }
 
-
-
-
-#inforsite{
+#inforsite {
   float: left;
   width: 45vw;
   height: 500px;
   text-align: center;
-  margin-top:5vh;
-  
+  margin-top: 5vh;
 }
 
 #imginfosite {
-  background-image: url(img/Design-sem-nome-_2_.webp) ;
+  background-image: url(img/Design-sem-nome-_2_.webp);
   width: 40vw;
   float: right;
-  height:500px ;
+  height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top:5vh;
+  margin-top: 5vh;
   border-radius: 12px;
 }
 
-#infojob{
+#infojob {
   width: 100vw;
-  height: 500px ;
-} 
+  height: 500px;
+}
 
-#infoloja{
+#infoloja {
   width: 90vw;
   margin: auto;
 }
 
-#imgloja{
-  background-image: url(img/newloja.svg) ;
+#imgloja {
+  background-image: url(img/newloja.svg);
   width: 40vw;
   float: left;
-  height:400px ;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top:5vh;
+  margin-top: 5vh;
   border-radius: 12px;
 }
 
-#textloja{
+#textloja {
   float: right;
   width: 45vw;
   height: 400px;
   text-align: center;
-  margin-top:5vh;
-  
+  margin-top: 5vh;
 }
 
-#imgserviço{
-  background-image: url(img/serviçosphotos.svg) ;
+#imgserviço {
+  background-image: url(img/serviçosphotos.svg);
   width: 40vw;
   float: right;
-  height:400px ;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top:5vh;
+  margin-top: 5vh;
   border-radius: 12px;
 }
 
-#infoserviço{
+#infoserviço {
   width: 90vw;
   margin: auto;
 }
 
-#textserviço{
+#textserviço {
   float: left;
   width: 45vw;
   height: 400px;
   text-align: center;
-  margin-top:5vh;
+  margin-top: 5vh;
 }
 
-#infocontatos{
+#infocontatos {
   width: 90vw;
   margin: auto;
 }
 
-#imgcontatos{
-  background-image: url(img/contatosphotos.svg) ;
+#imgcontatos {
+  background-image: url(img/contatosphotos.svg);
   width: 40vw;
   float: left;
-  height:400px ;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top:5vh;
+  margin-top: 5vh;
   border-radius: 12px;
 }
 
-#textcontatos{
+#textcontatos {
   float: right;
   width: 45vw;
   height: 400px;
   text-align: center;
-  margin-top:5vh;
+  margin-top: 5vh;
 }
 
-#infotrein{
+#infotrein {
   width: 90vw;
   margin: auto;
 }
 
-#treinimg{
-  background-image: url(img/treinamenos.svg) ;
+#treinimg {
+  background-image: url(img/treinamenos.svg);
   width: 40vw;
   float: right;
-  height:400px ;
+  height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-top:10vh;
+  margin-top: 10vh;
   border-radius: 12px;
 }
 
-#texttrein{
+#texttrein {
   float: left;
   width: 45vw;
   height: 400px;
   text-align: center;
-  margin-top:5vh;
+  margin-top: 5vh;
 }
-
