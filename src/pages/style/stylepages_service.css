@@ -3,6 +3,13 @@
     margin:0%;
 
 }
+
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
 body,html{
     width: 100%;
     height:100%;
@@ -15,21 +22,52 @@ body,html{
 
 .dashbordconteiner{
     background: var(--backazul);
-    width: 5vw;
+    width: 3vw;
     height: 100vh;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.dashbordconteiner:hover{
+    transition: all .5s;
+    width: 11vw ;
+    border-radius: 0px 12px 12px 0px;
+}
+
+html > body > div:hover > div > div > span > img  {
+    transition: all .5s ;
+    transform: rotate(360deg);
+}
+
+html > body > div > div > div > span > a:hover {
+    margin-left: 2vw;
+    text-decoration: underline;
+
 }
 
 .dashlist{
     display: flex;
     flex-direction: column;
+
 }
 
 .listnameservice{
     width: 100%;
     height: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
 .imglist{
     width: 35px;
     height: 35px;
 }
+
+.styleofcolumn{
+    display: flex;
+    align-items: center;
+}
+
+.styleofcolumn a{
+    margin-left: 1vw;
+}
+
