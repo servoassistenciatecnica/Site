@@ -1,0 +1,23 @@
+:root {
+    --preto: #2f2f39;
+    
+  }
+body,html{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0%;
+    padding: 0%;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    background-color: var(--preto);
+
+}
+
+.imgheader{
+    width: 20px;
+    height: 100px;
+    background-image: url(../img/newicon.svg);
+    
+}

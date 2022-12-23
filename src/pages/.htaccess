@@ -1,3 +1,7 @@
 RewriteEngine On
 
 RewriteRule ^service service.html [NC]
+
+RewriteEngine On
+
+RewriteRule ^contacts contacts.html [NC]
