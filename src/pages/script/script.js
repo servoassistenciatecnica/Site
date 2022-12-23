@@ -15,7 +15,7 @@ const inforsubmit = (event) =>{
     const name = document.querySelector('input[name=nome]').value;
     const lastname = document.querySelector('input[name=sobrenome]').value;
     const email = document.querySelector('input[name=email]').value;
-    const text = document.querySelector('textarea[name=textuser]').value;
+    const text = document.querySelector('textarea[name=mensagem]').value;
 
     fetch("https://api.sheetmonkey.io/form/r2JjtdaRLARrAvynsNB6kf", {
 
