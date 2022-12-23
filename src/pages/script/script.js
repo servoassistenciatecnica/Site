@@ -5,6 +5,7 @@ buttom.innerHTML = '<img src="img/iconpage.ico" alt="" srcset="" class="imgsubmi
 
 const removeloadind = () =>{
     buttom.innerHTML = "ENVIAR";
+    location.href = 'https://servoassistenciatecnica.github.io/Site/#';
     }
 
 const inforsubmit = (event) =>{
