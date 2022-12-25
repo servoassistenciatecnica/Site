@@ -1,200 +1,63 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="public/stylebasic.css">
-  <link rel="stylesheet" href="src/styleall.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.css" />
-  <link rel="stylesheet" href="src/style/stylecarousel.css" />
-  <link rel="shortcut icon" href="public/iconpage.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SERVO TECH - SERVIÇOS DE INFORMATICA</title>
+  <link rel="stylesheet" href="src/styleall.css">
+  <link rel="shortcut icon" href="public/iconpage.ico" type="image/x-icon">
 </head>
-
-<body onload="loading_p ()">
-
-  <div id="box-load">
-    <div class="loadind">
+<body onload="loadindpage()">
+  <div class="loadind" id="loadind">
+    <div class="loadindimg" id="loadindimg">
 
     </div>
+  </div>
+  <main class="conteiner">
+
+<div class="coteinerafterheader" id="coteinerafterheader">
+  <div class="backconteiner">
+  
+        <header>
+          <div id="nav-header">
+            <div class="imgheader">
+            </div>
+            <div class="menu" >
+              <div class="linemenu">
+                <span class="material-symbols-outlined" id="arrow_back_ios" onclick="clickmenu()">
+                  <img src="src/img/arrow_back_ios_seta.svg" alt="" srcset="" class="material-symbols-outlined">
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="lineheader" onclick="clickmenu()">
+            <div class="lineheadernav" id="lineheadernav"></div>
+            <div class="lineheadernav" id="lineheadernav"></div>
+            <div class="lineheadernav" id="lineheadernav"></div>
+          </div>
+        </header>
+        <div class="informationbefore">
+          <span class="textinformation">
+            estamos prontos para te servi  <br>a servo tem a soluçao
+          </span>
+        
+        </div>
+        <div class="buttonconteiner">
+            <button class="conteinerbutton">veja mais</button>
+        </div>
+        
+        </div>
+</div>
+
+<div class="conteinerbuttonwhats" onclick="apizap()">
+  <div class="buttonwhats">
     
   </div>
+</div>
+  </main>
 
-  <main class="container" id="container">
-    <div id="afterheader">
-      <div id="backheader">
-        <div id="logoheader">
-          <img src="src/img/novalogo.svg" alt="" srcset="" id="imgheader">
-        </div>
-      </div>
-      <header>
-        <nav class="nav-link">
-          <ul class="a-dropbox">
-            <li class="aniheader">HOME</li>
-            <li class="aniheader" class="dropdown-serviço"> <a href="src/pages/service">SERVIÇOS</a> </li>
-            <li class="aniheader" class="headerloja">LOJAS</li>
-            <li class="aniheader"><a href="src/pages/contacts">CONTATOS</a></li>
-            <li class="aniheader">TREINAMENTO</li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-
-    <div id="beforeheader">
-      <div id="my-keen-slider" class="keen-slider">
-        <div class="keen-slider__slide number-slide1">1</div>
-        <div class="keen-slider__slide number-slide2">2</div>
-        <div class="keen-slider__slide number-slide3">3</div>
-        <div class="keen-slider__slide number-slide4">4</div>
-        <div class="keen-slider__slide number-slide5">5</div>
-        <div class="keen-slider__slide number-slide6">6</div>
-      </div>
-    </div>
-      <div id="berofeslider">
-        <script src="https://cdn.jsdelivr.net/npm/keen-slider@6.8.5/keen-slider.min.js"></script>
-        <script src="src/script/scriptcarousel.js"></script>
-        <article id="conteinerinfosite">
-          <aside id="imginfosite">
-          </aside>
-          <section id="inforsite">
-            <h3>QUEM NOS SAMOS?</h3>
-            <p>samos uma empresa especializada em informatica, como foramtaçoes e arrumar problemas e dar suporte ao
-              clientes etc... estamos prontos para te ajudar e te servi como empresa Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Eligendi, vero perferendis qui placeat ab consequatur hic accusantium beatae
-              saepe! Dolores at nam, explicabo fuga dicta similique maiores atque. Modi, sint? Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Officiis temporibus eligendi placeat corporis vero accusantium architecto
-              atque accusamus velit tenetur odio, asperiores, dicta quidem ducimus quia ad maxime! Reprehenderit, eum.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, at! Debitis neque qui rem reiciendis
-              aspernatur commodi doloribus provident pariatur omnis voluptatum. Quibusdam, laudantium laborum. Fugit
-              voluptatibus saepe corrupti dignissimos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, animi
-              ipsam nobis accusantium libero, dicta consectetur doloribus obcaecati eaque similique ea dolore dolorem nam
-              aliquam nisi. Quibusdam consequatur neque similique? </p>
-          </section>
-        </article>
-        <article id="infoloja">
-          <aside id="imgloja">
-          </aside>
-          <section id="textloja">
-            <h3>LOJAS</h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ea debitis iure distinctio quasi
-                praesentium reprehenderit sapiente reiciendis ipsum, magni, repellendus, recusandae fuga est unde libero
-                deleniti excepturi explicabo nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem
-                doloremque quos animi ipsum saepe sed debitis, error voluptates ut nihil totam sequi neque eos
-                consequatur, earum rem tempora qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nihil
-                accusamus perspiciatis facilis sunt explicabo quae id corrupti culpa nemo cupiditate, at voluptas
-                repudiandae a expedita architecto nobis consequuntur. Quam. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Tenetur aperiam earum minima veritatis autem hic perspiciatis pariatur tempora
-                obcaecati, doloremque, veniam, libero ab quisquam voluptatibus temporibus aspernatur corrupti culpa
-                ratione.loren Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi, suscipit dolor, cupiditate
-                tempora repellat quibusdam nulla error reprehenderit ea nobis et perspiciatis corrupti sapiente provident
-                .</p>
-          </section>
-        </article>
-        <article id="infoserviço">
-          <aside id="imgserviço">
-          </aside>
-          <section id="textserviço">
-            <h3>SERVIÇOS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nam iste quod facere fugit aliquam
-              repellendus! Doloremque quam laborum possimus illo maiores quis nam reiciendis, magnam, ipsum reprehenderit
-              veritatis perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur excepturi
-              officiis commodi tempore dolorum numquam placeat quasi ipsa ullam iure! Nesciunt fugiat aspernatur eveniet
-              et! Impedit perspiciatis ipsa nobis suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              similique temporibus impedit repudiandae quo. A accusantium, delectus tempore facilis quas quis earum odio
-              in optio atque expedita provident recusandae tenetur? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Dolore, pariatur quas ex quae dicta et, non, molestiae repellendus perspiciatis recusandae est debitis
-              in? Facilis iure ut, labore at reiciendis architecto? Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Unde culpa deserunt distinctio nisi soluta, fuga animi eos aliquam dolorum, nemo illum ducimus libero?
-              Cum, blanditiis. Eveniet </p>
-          </section>
-        </article>
-        <article id="infocontatos">
-          <aside id="imgcontatos">
-          </aside>
-          <section id="textcontatos">
-            <h3>CONTATOS</h1>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat deleniti numquam enim ipsum consectetur
-                tempora, nostrum voluptates, facilis voluptate quisquam accusantium iste! Voluptatem nihil debitis non
-                sapiente, ratione commodi libero! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam
-                debitis rerum nostrum sequi esse, saepe ipsa exercitationem nobis quasi est ex nemo excepturi harum
-                veritatis ratione, illum error! Magnam, cum! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Placeat, voluptatum sequi dolores consequuntur laudantium, eveniet molestiae cumque numquam repellendus
-                excepturi labore quidem ad id atque minima nobis. Placeat, quibusdam exercitationem? Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Odit omnis vero, provident repellat corrupti incidunt repudiandae
-                perspiciatis rerum tempora vel harum nisi officia excepturi alias</p>
-          </section>
-        </article>
-        <article id="infotrein">
-          <aside id="treinimg">
-          </aside>
-          <section id="texttrein">
-            <h3>TREINAMENTOS</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facere reiciendis sequi eos hic,
-              perspiciatis nulla quidem? Iste vero ipsam fugiat illum nemo, impedit quidem. Tempore hic ullam numquam
-              repellendus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam consequuntur incidunt
-              pariatur necessitatibus, modi similique, qui sequi error vero laudantium quisquam. Non quibusdam explicabo
-              dolores iusto, odit excepturi soluta exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Molestias, cumque dolor, beatae earum facere sequi odio labore saepe accusamus ipsam, ad sint
-              provident quaerat consequatur optio. Mollitia fugiat culpa at? Lorem ipsum dolor, sit amet consectetur
-              adipisicing elit. Dicta suscipit corporis iste veniam sed molestias dolore ab reprehenderit ipsa delectus
-              earum laudantium sunt qui, praesentium quisquam consectetur in voluptatum tempore. Lorem ipsum dolor sit
-              amet, consectetur adipisicing elit. At maiores nemo neque, tenetur cum totam placeat a modi fuga cumque
-              mollitia fugit doloremque expedita magni similique reiciendis, cupiditate quia officia. Lorem ipsum dolor,
-              sit amet consectetur adipisicing elit. Fuga dicta debitis minus possimus. Sed, alias</p>
-          </section>
-        </article>
-        <script src="src/script/fastcharging.js"></script>
-        <script src="src/script/scriptall.js"></script>
-
-      
-      </div>
-
-
-          <footer>
-            <section id="conteinerallfooter">
-              <article class="conteinerinformationfooter">
-                <div class="titlefooter1">
-                  <h4>sobre nos</h4>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque minus laudantium reprehenderit culpa, repellat a harum, ut nesciunt eius molestias excepturi et officiis? Porro, in cum. Iste neque unde eveniet.</p>
-                </div>
-                <div class="titlefooter2">
-                  <h4>categorias e informaçoes</h4>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque minus laudantium reprehenderit culpa, repellat a harum, ut nesciunt eius molestias excepturi et officiis? Porro, in cum. Iste neque unde eveniet.</p>
-                </div>
-
-                <div class="titlefooter3">
-                  <h4>links</h4>
-                  <p><a href="#">contatos</a></p>
-                  <p><a href="#">links...</a></p>
-                  <p><a href="#">links...</a></p>
-                </div>  
-              </article>
-
-              <article class="copyrightsforuser">
-                <div class="infomationcreator">
-                  Copyright &copy; 2022 All Rights Reserved by Gabriel Amaral
-                </div>
-                
-                <div class="linksocterwebsite">
-                  <div class="iconsitefooter" id="facebackfooter">
-                    <img src="src/img/facebookiconfooter.svg" alt="">
-                  </div>
-                  <div class="iconsitefooter" id="instabackfooter">
-                    <img src="src/img/instragramiconfooter.svg" alt="">
-                  </div>
-                  <div class="iconsitefooter" id="whatsbackfooter">
-                    <img src="src/img/whatszapiconfooter.svg" alt="" >
-                  </div>
-                </div>
-              </article>
-            </section>
-          </footer>
-    </main>
-
-    
+<script src="src/script/scriptall.js"></script>
 
 </body>
-
 </html>

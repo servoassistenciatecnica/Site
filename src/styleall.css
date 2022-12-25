@@ -1,618 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap');
 
 :root {
-  --preto: #2f2f39;
-  
+  --preto:#172026;
 }
 
-@keyframes loadind {
+@keyframes loadani{
   to{
     transform: rotate(360deg);
   }
 }
 
-.containeri{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 150px;
-  margin: 150px auto;
+*{
+  font-family: 'Courier New', Courier, monospace;
+  
+  padding: 0%;
+  transition: .5s;
+  
 }
 
-#box-load{
-  z-index: 2;
-  position: absolute;
-  background-color: white;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+html,body{
+background-color: #ffffff;
+padding: 0%;
+margin: 0%;
+width: 100vw;
+height:100vh;
+}
+
+body{
+  
 }
 
 .loadind{
-  width: 50px;
-  height: 50px;
-  background-image: url(img/loadindpageicon.svg);
-  background-size: contain;
-  animation: loadind 1.5s infinite cubic-bezier(0.65, 0.05, 0.36, 1)
-  
-} 
-
-#afterheader{
-  display: none;
-}
-
-#container{
-  display: block;
-}
-
-#beforeheader{
-  display: block;
-}
-
-#berofeslider{
-  display: none;
-}
-
-h3,
-p {
-  font-family: "Open Sans", "Courier New", Courier, monospace;
-}
-
-h3 {
-  color: #2d5ef5;
-}
-
-a {
-  text-decoration: none;
-  color:black;
-}
-
-header {
-  width: 100vw;
-  height: 10vh;
-  background-color: white;
   margin: auto;
+  width: 90%;
+  height:100%;
+  background-color: #ffffff;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-link {
-  z-index: 1;
-  width: 100%;
+.loadindimg{
+  width: 10%;
+  height:20%;
+  background:url(img/loadindpageicon.svg) no-repeat;
+  background-size: contain;
+  animation: loadani .5s infinite linear;
+}
+
+.conteiner{
+  width: 100vw;
+  height: 100vh;
+}
+
+.coteinerafterheader{
+  display: none;
+}
+
+header{
+  width:100vw;
+  height:20vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 10vh;
+  
 
 }
 
-.nav-link ul {
-  padding: 1vw;
-}
-
-.nav-link ul li {
-  display: inline;
-  position: relative;
-}
-
-.nav-link ul ul {
-  position: absolute;
-  left: 0%;
-  float: left;
-  display: none;
+#nav-header{
+  width:100vw;
+  height:20vh;
+  display: flex;
   justify-content: space-between;
-  border-radius: 12px;
-}
-
-.nav-link ul :hover ul {
-  display: flex;
-}
-
-.aniseta {
-  width: 10px;
-  height: 10px;
-  transform: rotate(270deg);
-}
-
-.aniheader:hover>.aniseta {
-  transform: rotate(90deg);
-}
-
-.anisetaserv {
-  width: 10px;
-  height: 10px;
-  transform: rotate(270deg);
-}
-
-.aniheader:hover>.anisetaserv {
-  transform: rotate(90deg);
-}
-
-.aniheader:hover {
-  cursor: pointer;
-  padding: 1vw;
-  border-bottom: 1px lightgray solid;
-}
-
-.lojalogoheader {
-  display: flex;
-  width: 10vw;
-  height: 10vh;
   align-items: center;
-  justify-content: center;
-  justify-content: space-around;
-  background: url(img/partmagalu.webp) no-repeat center center;
+}
+
+.imgheader{
+  width:5vw;
+  height:10vh;
+  background: url(img/iconpage.ico) no-repeat;
   background-size: contain;
-  padding: 1vw;
+  margin-left: 1vw ;
 
 }
 
-.lojalogoheaderaz {
-  display: flex;
-  width: 10vw;
-  height: 10vh;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
-  background: url(img/partaz.webp) no-repeat center center;
-  background-size: contain;
-  padding: 1vw;
-
-}
-
-.lojalogoheader:hover {
-  border-radius: 2px;
-  border-bottom: 1px solid white;
-
-  transform: scale(1.1);
-}
-
-.lojalogoheaderaz:hover {
-  border-radius: 2px;
-  border-bottom: 1px solid white;
-  transform: scale(1.1);
-}
-
-
-.dropdown-loja {
-  display: flex;
-}
-
-.dropdownservice {
-  width: 40vw;
-  height: 40vh;
-  background-color: white;
-  display: flex;
-}
-
-.dropdownservice li {
-  display: flex;
-}
-
-.textinformationservice {
-  width: 40%;
+.menu{
+  width: 2%;
   height: 100%;
-  float: left;
-}
-
-.textinformationservice h4 :hover{
- text-decoration: underline;
-}
-
-.dropboxconteinerservice {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+html > body > main >div > div > header > div > div > div > span:hover{
+  cursor: pointer;
+}
+
+html > body > main >div > div > header > div:hover{
+  cursor: pointer;
+}
+
+html > body > main > header > div:hover{
+  cursor: pointer;
+}
+
+.linemenu{
+  width:2vw;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+.material-symbols-outlined{
   width: 100%;
-  height: 100%;
-
 }
 
-.optionsinformationservice {
-  display:flex;
-  flex-direction:column ;
-  width: 40%;
-  height: 100%;
-  float: right;
-}
-
-.optionsinformationservice > a {
-  padding-top: 5%;
-}
-
-.optionsinformationservice > a:hover {
-  text-decoration: underline;
-}
-
-.anisetaservice{
-  width: 10px;
-  height: 10px;
-  transform: rotate(270deg);
-}
-
-.dropdown-serviço {
-  display: flex;
-}
-
-#imgheader {
-  width: 120px;
-  height: 120px;
-  display: block;
-  margin: auto;
-}
-
-#logoheader {
-  background-color: #2f2f39;
-}
-
-#textinformation {
-  width: 40vw;
-  text-align: left;
-}
-
-.chargingbord {
-  display: none;
-}
-
-#loja {
-  width: 100vw;
-  height: 300px;
-  align-items: center;
-  justify-content: center;
-}
-
-#partmagalu {
-  width: 15vw;
-  height: 50px;
-  border-radius: 14px;
-  background-image: url(img/partmagalu.webp);
-  background-position: center center;
-  background-size: cover;
-  margin-right: 1vw;
-}
-
-#partmagalu:hover {
-  margin-bottom: 10px;
-  cursor: pointer;
-  transform: scale(1.1);
-  border: 1px lightgrey solid;
-}
-
-#buttosviewloja {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 0vw;
-  height: 15vh;
-  float: left;
-}
-
-#viewloja {
-  width: 0vw;
-  height: 15vh;
-  border-top: 1px lightgray solid;
-  background-color: var(--preto);
-  float: left;
-  border-radius: 0px 12px 12px 0px;
-}
-
-#partaz {
-  width: 15vw;
-  height: 50px;
-  border-radius: 14px;
-  background-image: url(img/partaz.webp);
-  background-position: center center;
-  background-size: cover;
-  margin-left: 1vw;
-}
-
-#partaz:hover {
-  margin-bottom: 10px;
-  cursor: pointer;
-  transform: scale(1.1);
-  border: 1px lightgrey solid;
-}
-
-#viewcontact {
-  width: 100vw;
-  height: 15vh;
-  background-color: #2fba43;
-}
-
-.contactwhats {
-  width: 17vw;
-  height: 5vh;
-  background-color: white;
-  border-radius: 12px;
-  margin: 1vw;
-  overflow: hidden;
-  display: flex;
-  border: 1px solid black;
-  padding: 5px;
-}
-
-.contactwhats>img {
-  float: left;
-  border-radius: 50%;
-}
-
-.contactwhats:hover {
-  margin-bottom: 10px;
-  cursor: pointer;
-  transform: scale(1.1);
-  border: 1px lightgrey solid;
-}
-
-#contactname {
-  float: right;
-  display: flex;
-  align-items: center;
-  margin-left: 1vw;
-}
-
-#buttonsviewcontact {
-  width: 100vw;
-  height: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#conteinerinfosite {
-  width: 90vw;
-  margin: auto;
-}
-
-#inforsite {
-  float: left;
-  width: 45vw;
-  height: 500px;
-  text-align: center;
-  margin-top: 5vh;
-}
-
-#imginfosite {
-  background-image: url(img/Design-sem-nome-_2_.webp);
-  width: 40vw;
-  float: right;
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 5vh;
-  border-radius: 12px;
-}
-
-#infojob {
-  width: 100vw;
-  height: 500px;
-}
-
-#infoloja {
-  width: 90vw;
-  margin: auto;
-}
-
-#imgloja {
-  background-image: url(img/newloja.svg);
-  width: 40vw;
-  float: left;
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 5vh;
-  border-radius: 12px;
-}
-
-#textloja {
-  float: right;
-  width: 45vw;
-  height: 400px;
-  text-align: center;
-  margin-top: 5vh;
-}
-
-#imgserviço {
-  background-image: url(img/serviçosphotos.svg);
-  width: 40vw;
-  float: right;
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 5vh;
-  border-radius: 12px;
-}
-
-#infoserviço {
-  width: 90vw;
-  margin: auto;
-}
-
-#textserviço {
-  float: left;
-  width: 45vw;
-  height: 400px;
-  text-align: center;
-  margin-top: 5vh;
-}
-
-#infocontatos {
-  width: 90vw;
-  margin: auto;
-}
-
-#imgcontatos {
-  background-image: url(img/contatosphotos.svg);
-  width: 40vw;
-  float: left;
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 5vh;
-  border-radius: 12px;
-}
-
-#textcontatos {
-  float: right;
-  width: 45vw;
-  height: 400px;
-  text-align: center;
-  margin-top: 5vh;
-}
-
-#infotrein {
-  width: 90vw;
-  margin: auto;
-}
-
-#treinimg {
-  background-image: url(img/treinamenos.svg);
-  width: 40vw;
-  float: right;
-  height: 400px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 10vh;
-  border-radius: 12px;
-}
-
-#texttrein {
-  float: left;
-  width: 45vw;
-  height: 400px;
-  text-align: center;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-}
-
-footer{
-  display: flex;
-  width: 100vw;
-  height: 40vh;
-  background-color: var(--preto);
-
-}
-
-#conteinerallfooter{
- margin: auto;
-}
-
-.conteinerinformationfooter{
-  padding: 0%;
-  margin: 1vw;
-  width: 90vw;
-  display: flex;
-  border-bottom: 1px solid lightgray;
-}
-
-.titlefooter1{
-  text-transform: uppercase;
-  color: white;
-  width: 30%;
-  height: 100%;
-  
-}
-
-.titlefooter1 > p{
-  text-transform: lowercase;
-  color: lightgray;
-}
-
-.titlefooter2{
-  margin-left: 1vw;
-  text-transform: uppercase;
-  color: white;
-  width: 30%;
-  height: 100%;
-  
-}
-
-.titlefooter2 > p{
-  text-transform: lowercase;
-  color: lightgray;
-
-  
-}
-
-.titlefooter3{
-  margin-left: 1vw;
-  text-transform: uppercase;
-  color: white;
-  width: 30%;
-  height: 100%;
-  
-}
-
-.titlefooter3 > p{
-  text-transform: lowercase;
-  color: lightgray;
-}
-
-.titlefooter3 > p > a{
-  color: white  ;
-}
-
-.copyrightsforuser{
-  padding: 0%;
-  margin: 1vw;
-  width: 90vw;
-  display: flex;
-  height: 50px;
-  
-}
-
-.infomationcreator{
-  color: lightgray ;
-  width:50% ;
-  height: 25px;
-}
-
-.linksocterwebsite{
-  width: 50%;
-  height: 50px;
-  display: flex;
-  justify-content: flex-end;
-  
-}
-
-.linksocterwebsite > .iconsitefooter{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-.linksocterwebsite > #facebackfooter:hover{
-  transition: all .5s;
-  background-color: #1977F3;
-  cursor: pointer;
-}
-
-.linksocterwebsite > #instabackfooter:hover{
-  transition: all .5s;
-  background-image: linear-gradient(to top, rgb(77, 99, 198),#E35271);
-  cursor: pointer;
-}
-
-.linksocterwebsite > #whatsbackfooter:hover{
-  transition: all .5s;
-  background-color: #48C858;
-  cursor: pointer;
-}
-
-.iconsitefooter{
-  background-color: #3b3b3f;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  float: right;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.iconsitefooter > img {
-  display: flex;
+.material-symbols-outlined > img{
   width: 25px;
-  height: 25px;
+}
+
+.lineheader{
+  width: 2%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 1vw;
+}
+
+.lineheadernav{
+  width: 100%;
+  height: 2%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 14px;
+  margin: 5%;
+}
+
+.backconteiner{
+  background: url(img/backgroundheaderindex.svg);
+}
+
+.informationbefore{
+  margin-top: 30vh;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textinformation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-transform:uppercase;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+}
+
+.buttonconteiner{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttoninfo{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteinerbutton{
+  height: 100%;
+  width: 10%;
+  border: 0px;
+  background-color: rgb(58, 214, 58);
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+}
+
+html > body > main > div > div > div > button:hover{
+  background-color: rgb(24, 211, 24);
+  margin-bottom: 1%;
+  cursor: pointer;
+}
+
+.conteinerbuttonwhats{
+  width: 4%;
+  height: 8%;
+  position: fixed;
+  background-color: #1AD03F;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  transform: translate(94vw , 19vh);
+}
+
+.buttonwhats{
+  width: 90%;
+  height: 90%;
+  background: url(img/whatszapiconfooter.svg) no-repeat;
+  border-radius: 50%;
+  background-size: contain;
+}
+
+.conteinerbuttonwhats:hover{
+  cursor: pointer;
+  transform: translate(94vw , 18vh);
+  
 }
 
